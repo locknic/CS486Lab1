@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.custardgames.locknic.lab1.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <SurfaceView
+            android:id="@+id/cameraDetectorSurfaceView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:layout_editor_absoluteX="153dp"
+            tools:layout_editor_absoluteY="246dp" />
+
+        <TextView
+            android:id="@+id/joyThreshold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="You have reached the threshold using SMA"
+            android:visibility="invisible"
+            tools:layout_editor_absoluteX="59dp"
+            tools:layout_editor_absoluteY="401dp" />
+
+        <TextView
+            android:id="@+id/joyThresholdWeighted"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="You have reached the threshold using WMA"
+            android:visibility="invisible"
+            tools:layout_editor_absoluteX="59dp"
+            tools:layout_editor_absoluteY="377dp" />
+
+        <TextView
+            android:id="@+id/joyThresholdTimestamp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="You have reached the threshold using SMA using timestamps"
+            android:visibility="invisible"
+            tools:layout_editor_absoluteX="59dp"
+            tools:layout_editor_absoluteY="377dp" />
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>
